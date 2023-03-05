@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/icon-fav.webp" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link href="./assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="./js/maps_api.js"></script>
+    <title>MONTICELLO</title>
+</head>
+
+<body class="body">
+    <a class="arrow-btn up-btn" href="#banner"  data-scroll="true"></a>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/svg/logo.svg" alt="logo image" class="logo__img">
+            </div>
+            <nav class="menu inactive-menu">
+                <ul class="menu__list">
+                    <li class="menu__item ">
+                        <a class="menu__link menu__link_unchecked " href="#about" data-scroll="true">about us</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link_unchecked" href="#news" data-scroll="true">news</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link_unchecked" href="#project" data-scroll="true">project</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link_unchecked" href="#contact" data-scroll="true">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="media">
+                <a href="https://www.facebook.com/" target="_blank" class="media__icon">
+                    <svg width="10" height="16" viewBox="0 0 10 16">
+                        <use xlink:href="./assets/svg/media-sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="media__icon">
+                    <svg width="16" height="14" viewBox="0 0 16 14">
+                        <use xlink:href="./assets/svg/media-sprite.svg#tweeter"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="media__icon">
+                    <svg width="16" height="14" viewBox="0 0 16 14">
+                        <use xlink:href="./assets/svg/media-sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="burger">
+                <span class="burger__line"></span>
+            </div>
+        </div>
+    </header>
+    <section class="banner" id="banner">
+        <div class="slider">
+            <div class="slider-slide"><img src="./assets/img/carousel-banner/1.webp" class="slider-slide__img" alt="">
+            </div>
+            <div class="slider-slide"><img src="./assets/img/carousel-banner/2.webp" class="slider-slide__img" alt="">
+            </div>
+            <div class="slider-slide"><img src="./assets/img/carousel-banner/3.webp" class="slider-slide__img" alt="">
+            </div>
+            <div class="slider-slide"><img src="./assets/img/carousel-banner/4.webp" class="slider-slide__img" alt="">
+            </div>
+            <div class="slider-slide"><img src="./assets/img/carousel-banner/5.webp" class="slider-slide__img" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="heading">
+                <h1 class="title title_1">simple & modern</h1>
+                <span class="subtitle">we make the world beatiful everyday</span>
+            </div>
+            <a href="#about" class=" arrow-btn banner__btn" data-scroll="true"></a>
+        </div>
+    </section>
+    <section class="about" id="about" data-target="true">
+        <div class="container">
+            <h2 class="title title_2 striped">what we do</h2>
+            <div class="info">
+                <div class="info__img">
+                    <img src="./assets/img/about/house1.webp" alt="house image">
+                    <div class="info__image-shadow"></div>
+                </div>
+                <div class="info__descr">
+                    <span class="info__sup-title">one world</span>
+                    <h2 class="title title_2 info__title">trade center</h2>
+                    <p class="info__text">Increasing prosperity in our lives can be accomplished by having the right
+                        frame
+                        of mind. The truth is, our thoughts are very powerful.</p>
+                    <a class="btn info__btn">more details</a>
+                    <span class="info__location">
+                        <i class="fa-solid fa-location-dot"></i>New York City, United States - 1776 feet </span>
+                </div>
+            </div>
+            <div class="info info_reverse">
+                <div class="info__img">
+                    <img src="./assets/img/about/house2.webp" alt="house image">
+                    <div class="info__image-shadow"></div>
+                </div>
+                <div class="info__descr">
+                    <span class="info__sup-title">international</span>
+                    <h2 class="title title_2 info__title">commerce centre</h2>
+                    <p class="info__text">Successful businesses have many things in common, today we’ll look at the big
+                        ‘R’
+                        of recognition and how a digital advertising network may help.</p>
+                    <button class="btn info__btn">more details</button>
+                    <span class="info__location">
+                        <i class="fa-solid fa-location-dot"></i> Hong Kong - 1588 feet</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news" id="news" data-target="true">
+        <div class="container">
+            <h2 class="title title_2 striped">latest news</h2>
+            <div class="slider">
+                <div class="slider-slide">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/news/news-1.webp" alt="house photo">
+                        </div>
+                        <div class="card__container">
+                            <h3 class="title title_3">see the unmatched beaty of the great.</h3>
+                            <p class="card__descr">Directories are perfect for customers that are
+                                searching for...</p>
+                            <div class="card__info">
+                                <div class="card__avatar">
+                                    <img src="./assets/img/news/news-author-1.webp" alt="author photo">
+                                </div>
+                                <div class="card__info_container">
+                                    <span class="card__author">alja brun</span>
+                                    <span class="card__date">20 Jan 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/news/news-2.webp" alt="house photo">
+                        </div>
+                        <div class="card__container">
+                            <h3 class="title title_3">effective advertising pointers.</h3>
+                            <p class="card__descr">Having a home based business is a wonderful asset to your life...</p>
+                            <div class="card__info">
+                                <div class="card__avatar">
+                                    <img src="./assets/img/news/news-author-2.webp" alt="author photo">
+                                </div>
+                                <div class="card__info_container">
+                                    <span class="card__author">dominic freeman</span>
+                                    <span class="card__date">13 Dec 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/news/news-3.webp" alt="house photo">
+                        </div>
+                        <div class="card__container">
+                            <h3 class="title title_3">hypnotize yourself into the ghost.</h3>
+                            <p class="card__descr">There are many things that are important to catalog design...</p>
+                            <div class="card__info">
+                                <div class="card__avatar">
+                                    <img src="./assets/img/news/news-author-3.webp" alt="author photo">
+                                </div>
+                                <div class="card__info_container">
+                                    <span class="card__author">alice ward</span>
+                                    <span class="card__date">30 Nov 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/news/news-1.webp" alt="house photo">
+                        </div>
+                        <div class="card__container">
+                            <h3 class="title title_3">see the unmatched beaty of the great.</h3>
+                            <p class="card__descr">Directories are perfect for customers that are
+                                searching for...</p>
+                            <div class="card__info">
+                                <div class="card__avatar">
+                                    <img src="./assets/img/news/news-author-1.webp" alt="author photo">
+                                </div>
+                                <div class="card__info_container">
+                                    <span class="card__author">alja brun</span>
+                                    <span class="card__date">20 Jan 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-slide">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./assets/img/news/news-2.webp" alt="house photo">
+                        </div>
+                        <div class="card__container">
+                            <h3 class="title title_3">effective advertising pointers.</h3>
+                            <p class="card__descr">Having a home based business is a wonderful asset to your life...</p>
+                            <div class="card__info">
+                                <div class="card__avatar">
+                                    <img src="./assets/img/news/news-author-2.webp" alt="author photo">
+                                </div>
+                                <div class="card__info_container">
+                                    <span class="card__author">dominic freeman</span>
+                                    <span class="card__date">13 Dec 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery " id="project" data-target="true">
+        <div class="container">
+            <h2 class="title title_2 striped">gallery</h2>
+            <div class="gallery__list">
+                <div class="gallery__item">
+                    <img src="./assets/img/gallery/1.webp" alt="" class="gallery__img">
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/gallery/2.webp" alt="" class="gallery__img">
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/gallery/3.webp" alt="" class="gallery__img">
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/gallery/4.webp" alt="" class="gallery__img">
+                </div>
+                <div class="gallery__item">
+                    <img src="./assets/img/gallery/5.webp" alt="" class="gallery__img">
+                </div>
+            </div>
+        </div>
+        <button class="btn gallery__btn">see more</button>
+    </section>
+    <section class="contact" id="contact" data-target="true">
+        <button class="contact__btn">Map</button>
+        <div class="contact__map" id="map"></div>
+        <form class="form container container_smaller">
+            <h2 class="title title_2 title_2_smaller-mb striped">get in touch</h2>
+            <div class="form__container">
+                <div class="form__contacts">
+                    <span class="form__text"><i class="fa-solid fa-location-dot"></i>91 Nolan Extensions Suite
+                        670</span>
+                    <span class="form__text"><i class="fa-solid fa-phone"></i>+001 356-868-2454</span>
+                    <span class="form__text"><i
+                            class="fa-solid fa-envelope-open-text"></i>montichello@service.com</span>
+                    <span class="form__text"><i class="fa-regular fa-clock"></i>From 07:05AM to 19:30PM</span>
+                </div>
+                <div class="form__inputs">
+                    <input type="text" name="name" class="form__input" placeholder="Name">
+                    <input type="email" name="email" class="form__input" placeholder="Email">
+                    <button type="submit" class="btn form__btn">submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer__bg"></div>
+        <div class="container container_smaller footer__container">
+            <div class="logo">
+                <img src="./assets/svg/logo.svg" alt="logo image" class="logo__img">
+            </div>
+            <div class="media">
+                <a href="https://www.facebook.com/" target="_blank" class="media__icon">
+                    <svg width="10" height="16" viewBox="0 0 10 16">
+                        <use xlink:href="./assets/svg/media-sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="media__icon">
+                    <svg width="16" height="14" viewBox="0 0 16 14">
+                        <use xlink:href="./assets/svg/media-sprite.svg#tweeter"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="media__icon">
+                    <svg width="16" height="14" viewBox="0 0 16 14">
+                        <use xlink:href="./assets/svg/media-sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <span class="footer__copyright container container_smaller footer__container">Copyrights © 2020
+            Montichello</span>
+    </footer>
+    <div class="modal">
+        <button class="modal__btn"></button>
+        <div class="modal__inner">
+            <img src="#" alt="" class="modal__img">
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="https://kit.fontawesome.com/b4aad56ffd.js" crossorigin="anonymous"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE_CWNtkDjzxxa-WFEiarXOB7T3NiWXlA&callback=initMap"></script>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

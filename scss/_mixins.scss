@@ -1,0 +1,44 @@
+@mixin topStrip($color, $height: null, $shadow-color: null) {
+    content: "";
+    display: block;
+    background: $color;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: $height;
+    filter: drop-shadow(0 4px 4px $shadow-color);
+}
+@mixin textSet($tt:null,$fw:null,$fz:null,$lh:null,$ls:null,$color:null){
+    text-transform: $tt;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color: $color;
+}
+@mixin dot($side) {
+    display: inline-block;
+    width: $side;
+    height: $side;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+@mixin position($position, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin d-flex($jc: null, $ai: null, $fd: null,$as:null, $gap: null) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+    align-self: $as;
+    gap: $gap;
+}

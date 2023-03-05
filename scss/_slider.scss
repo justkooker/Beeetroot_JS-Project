@@ -1,0 +1,115 @@
+.banner {
+    .slider-slide {
+        height: 100vh;
+        &__img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .slick-dots button {
+            @include dot(10px);
+            font-size: 0;
+            border: 1px solid $secondary-text-color;
+            padding: 0;
+            z-index: 3;
+            cursor: pointer;
+        }
+        .slick-active button {
+            background-color: $secondary-text-color;
+        }
+    }
+    .slider-slide {
+        height: 100%;
+        width: 100%;
+    }
+    .slider-slide__img {
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.06;
+    }
+    .slick-track {
+        height: 100vh;
+    }
+    .slick-dots {
+        @include d-flex($fd: column, $gap: 5vh);
+        @include position(absolute, $right: 50px, $top: 50%);
+        transform: translateY(-50%);
+    }
+}
+
+.news {
+    .slider {
+        position: relative;
+        padding-bottom: 3.4vh;
+        margin: 0 auto;
+        .slick-list {
+            margin-bottom: 4.3vh;
+        }
+        .slick-slide {
+            margin: 0 15px;
+        }
+        .slick-arrow {
+            display: block;
+            width: 40px;
+            height: 40px;
+            font-size: 0;
+            margin: 0 auto;
+            border: 1px solid $secondary-text-color;
+            border-radius: 50%;
+            background: url(../assets/svg/arrow-down.svg) no-repeat;
+            background-position: center;
+            transition: border 0.3s;
+            &:hover {
+                border: 1px solid #c2baba;
+                cursor: pointer;
+            }
+        }
+        .slick-next {
+            @include position(absolute, $right: -4vw, $bottom: 50%);
+            transform: translateY(-50%) rotate(-90deg);
+            @media screen and (max-width: 1300px) {
+                bottom: -2vh;
+                right: 4vw;
+            }
+        }
+        .slick-prev {
+            @include position(absolute, $left: -4vw, $bottom: 50%);
+            transform: translateY(-50%) rotate(90deg);
+            @media screen and (max-width: 1300px) {
+                bottom: -2vh;
+                left: 4vw;
+            }
+        }
+        .slick-dots {
+            @media screen and(max-height:500px) {
+                display: none;
+            }
+        }
+        .slick-dots button {
+            @include dot(10px);
+            font-size: 0;
+            border: 1px solid $secondary-text-color;
+            padding: 0;
+            z-index: 3;
+            cursor: pointer;
+        }
+        .slick-active button {
+            background-color: $secondary-text-color;
+        }
+        
+    }
+
+    .slick-dots {
+        @include d-flex($fd: row, $gap: 5vh);
+        @include position(absolute, $bottom: 0, $left: 50%);
+        transform: translateX(-50%);
+    }
+}
